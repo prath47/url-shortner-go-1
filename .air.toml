@@ -1,0 +1,23 @@
+# .air.toml - Basic configuration for Air live reloading
+
+# Working directory
+root = "."
+
+# Main Go file to run
+main = "./main.go"
+
+# Build options
+[build]
+cmd = "go build -o ./main"
+bin = "./main"
+include_ext = ["go", "tpl", "tmpl", "html"]
+exclude_dir = ["vendor", "tmp"]
+
+# Logging
+[log]
+color = "true"
+time = "true"
+
+# Misc
+[debug]
+enable = false
